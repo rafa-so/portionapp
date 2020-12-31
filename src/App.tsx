@@ -17,8 +17,8 @@ const App = () => {
       <AppContainer>
         <AppContainerText>Portion</AppContainerText>
         <Image source={logoImg} />
-        <Button />
-        {/* <Button /> */}
+        <Button>Sign Up</Button>
+        <Button>Login</Button>
       </AppContainer>
     </>
   );

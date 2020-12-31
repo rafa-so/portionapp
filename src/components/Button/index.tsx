@@ -1,13 +1,19 @@
 import React from 'react';
 
-import { TouchableOpacity, Text } from 'react-native';
+import { Container, TextContainer } from "./styles";
 
-const Button: React.FC = () => {
+interface ButtonProps {
+  children: string;
+}
+
+const Button: React.FC<ButtonProps> = ({ children, ...rest }) => {
   return (
     <>
-      {/* // <TouchableOpacity onPress={() => { }}> */}
-      <Text>Button</Text>
-      {/* </TouchableOpacity> */}
+      <Container onPress={() => { }}>
+        <TextContainer>
+          {children}
+        </TextContainer>
+      </Container>
     </>
   );
 }
