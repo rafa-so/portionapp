@@ -1,5 +1,6 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-import { StatusBar, Image } from 'react-native';
+import { StatusBar, Image, View } from 'react-native';
 
 import logoImg from './assets/logo.png';
 
@@ -17,7 +18,7 @@ const App = () => {
       <AppContainer>
         <AppContainerText>Portion</AppContainerText>
         <Image source={logoImg} />
-        <Button>Sign Up</Button>
+        <Button type="secondary">Sign Up</Button>
         <Button>Login</Button>
       </AppContainer>
     </>

@@ -1,6 +1,17 @@
-import styled from 'styled-components/native';
+import styled, { css } from 'styled-components/native';
 
-export const Container = styled.TouchableOpacity`
+import { BaseButtonProperties } from 'react-native-gesture-handler';
+import { TextInput } from 'react-native-gesture-handler';
+
+interface buttonProps extends BaseButtonProperties {
+  type?: 'secondary';
+}
+
+interface textButtonProps extends TextInput {
+  type?: 'secondary'
+}
+
+export const Container = styled.TouchableOpacity<buttonProps>`
   border-radius: 30px;
   width: 330px;
   height: 48px;
@@ -8,10 +19,20 @@ export const Container = styled.TouchableOpacity`
 
   justify-content: center;
   align-items: center;
+
+  margin-bottom: 10px;
+
+  ${props => props.type === 'secondary' && css`
+    background: #fff;
+  ` }
 `;
 
-export const TextContainer = styled.Text`
+export const TextContainer = styled.Text<textButtonProps>`
   color: #fff;
   font-family: "SourceSerifPro-SemiBold";
   font-size: 18px;
+
+  ${props => props.type === 'secondary' && css`
+    color: #0015CF;
+  ` }
 `; 

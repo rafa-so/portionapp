@@ -1,16 +1,29 @@
 import React from 'react';
 
+import { RectButtonProperties } from 'react-native-gesture-handler';
+
 import { Container, TextContainer } from "./styles";
 
-interface ButtonProps {
+interface ButtonProps extends RectButtonProperties {
   children: string;
+  type?: 'secondary'
 }
 
-const Button: React.FC<ButtonProps> = ({ children, ...rest }) => {
+const Button: React.FC<ButtonProps> = ({
+  children,
+  type = 'primary',
+  ...rest
+}) => {
   return (
     <>
-      <Container onPress={() => { }}>
-        <TextContainer>
+      <Container
+        type={type}
+        onPress={() => { }}
+        {...rest}
+      >
+        <TextContainer
+          type={type}
+        >
           {children}
         </TextContainer>
       </Container>
