@@ -24,12 +24,16 @@ export const Container = styled.TouchableOpacity<buttonProps>`
 
   ${props => props.type === 'secondary' && css`
     background: #fff;
+    border-style: solid;
+    border-color: #B4A8FB;
+    border-width: 1px;
   ` }
 `;
 
 export const TextContainer = styled.Text<textButtonProps>`
   color: #fff;
-  font-family: "SourceSerifPro-SemiBold";
+  font-family: "SourceSansPro-SemiBold";
+  /* font-family: "SourceSansPro-Regular"; */
   font-size: 18px;
 
   ${props => props.type === 'secondary' && css`

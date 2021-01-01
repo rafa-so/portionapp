@@ -8,7 +8,10 @@ import Button from './components/Button';
 
 import {
   AppContainer,
-  AppContainerText
+  AppContainerText,
+  HeaderWelcomeContainer,
+  FooterWelcomeContainer,
+  WelcomeContainer
 } from './styles';
 
 const App = () => {
@@ -16,10 +19,16 @@ const App = () => {
     <>
       <StatusBar barStyle="light-content" backgroundColor="#0015CF" />
       <AppContainer>
-        <AppContainerText>Portion</AppContainerText>
-        <Image source={logoImg} />
-        <Button type="secondary">Sign Up</Button>
-        <Button>Login</Button>
+        <WelcomeContainer>
+          <HeaderWelcomeContainer>
+            <AppContainerText>Portion</AppContainerText>
+            <Image source={logoImg} />
+          </HeaderWelcomeContainer>
+          <FooterWelcomeContainer>
+            <Button type="secondary">Sign Up</Button>
+            <Button>Login</Button>
+          </FooterWelcomeContainer>
+        </WelcomeContainer>
       </AppContainer>
     </>
   );

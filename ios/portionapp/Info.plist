@@ -57,6 +57,8 @@
 	<array>
 		<string>SourceSerifPro-Regular.ttf</string>
 		<string>SourceSerifPro-SemiBold.ttf</string>
+		<string>SourceSansPro-Regular.ttf</string>
+		<string>SourceSansPro-SemiBold.ttf</string>
 	</array>
 </dict>
 </plist>
