@@ -2,16 +2,15 @@ import styled from 'styled-components/native';
 
 export const AppContainer = styled.View`
   flex: 1;
-  background-color: #E8F1FF;
-
-  justify-content: center;
-  align-items: center;
+  /* background-color: #E8F1FF; */
+  background: linear-gradient(180deg, #E8F1FF 0%, #FFFFFF 100%);
 `;
 
 export const WelcomeContainer = styled.View`
-flex-direction: column;
+  flex:1;
   justify-content: space-between;
   align-items: center;
+  padding: 80px 0 40px 0;
 `;
 
 export const HeaderWelcomeContainer = styled.View`
