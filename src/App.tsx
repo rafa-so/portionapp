@@ -18,7 +18,7 @@ const App = () => {
   return (
     <>
       <StatusBar barStyle="light-content" backgroundColor="#0015CF" />
-      <AppContainer>
+      <AppContainer colors={['#E8F1FF', '#FFFFFF']}>
         <WelcomeContainer>
           <HeaderWelcomeContainer>
             <AppContainerText>Portion</AppContainerText>

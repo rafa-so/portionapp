@@ -20,7 +20,7 @@ export const Container = styled.TouchableOpacity<buttonProps>`
   justify-content: center;
   align-items: center;
 
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 
   ${props => props.type === 'secondary' && css`
     background: #fff;
@@ -33,7 +33,6 @@ export const Container = styled.TouchableOpacity<buttonProps>`
 export const TextContainer = styled.Text<textButtonProps>`
   color: #fff;
   font-family: "SourceSansPro-SemiBold";
-  /* font-family: "SourceSansPro-Regular"; */
   font-size: 18px;
 
   ${props => props.type === 'secondary' && css`

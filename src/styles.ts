@@ -1,9 +1,8 @@
 import styled from 'styled-components/native';
+import LinearGradient from 'react-native-linear-gradient';
 
-export const AppContainer = styled.View`
+export const AppContainer = styled(LinearGradient)`
   flex: 1;
-  /* background-color: #E8F1FF; */
-  background: linear-gradient(180deg, #E8F1FF 0%, #FFFFFF 100%);
 `;
 
 export const WelcomeContainer = styled.View`
@@ -18,7 +17,10 @@ export const HeaderWelcomeContainer = styled.View`
   align-items: center;
 `;
 
-export const FooterWelcomeContainer = styled.View``;
+export const FooterWelcomeContainer = styled.View`
+  height: 19%;
+  justify-content: space-between;
+`;
 
 export const AppContainerText = styled.Text`
   font-family: "SourceSerifPro-SemiBold";
