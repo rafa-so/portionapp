@@ -1,36 +1,20 @@
 import 'react-native-gesture-handler';
+
 import React from 'react';
-import { StatusBar, Image, View } from 'react-native';
+import { StatusBar } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import LinearGradient from 'react-native-linear-gradient';
 
-import logoImg from './assets/logo.png';
+import Routes from './routes';
 
-import Button from './components/Button';
-
-import {
-  AppContainer,
-  AppContainerText,
-  HeaderWelcomeContainer,
-  FooterWelcomeContainer,
-  WelcomeContainer
-} from './styles';
-
-const App = () => {
+const App: React.FC = () => {
   return (
-    <>
+    <NavigationContainer>
       <StatusBar barStyle="light-content" backgroundColor="#0015CF" />
-      <AppContainer colors={['#E8F1FF', '#FFFFFF']}>
-        <WelcomeContainer>
-          <HeaderWelcomeContainer>
-            <AppContainerText>Portion</AppContainerText>
-            <Image source={logoImg} />
-          </HeaderWelcomeContainer>
-          <FooterWelcomeContainer>
-            <Button type="secondary">Sign Up</Button>
-            <Button>Login</Button>
-          </FooterWelcomeContainer>
-        </WelcomeContainer>
-      </AppContainer>
-    </>
+      <LinearGradient colors={['#E8F1FF', '#FFFFFF']} style={{ flex: 1 }}>
+        <Routes />
+      </LinearGradient>
+    </NavigationContainer>
   );
 };
 
