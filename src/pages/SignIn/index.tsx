@@ -17,7 +17,10 @@ import {
   Header,
   Title,
   Body,
-  FormContainer
+  FormContainer,
+  ForgotPasswordText,
+  ForgotPasswordLink,
+  ForgotPasswordContainer
 } from './styles';
 
 const SignIn: React.FC = () => {
@@ -66,6 +69,11 @@ const SignIn: React.FC = () => {
                   formRef.current?.submitForm();
                 }}
               />
+              <ForgotPasswordContainer>
+                <ForgotPasswordText>
+                  Forgot your <ForgotPasswordLink>pasword?</ForgotPasswordLink>
+                </ForgotPasswordText>
+              </ForgotPasswordContainer>
             </View>
 
             <Button onPress={() => {

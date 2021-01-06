@@ -27,5 +27,21 @@ export const Body = styled.View`
 export const FormContainer = styled(Form)`
   flex: 1;
   justify-content: space-between;
-  /* align-items: center; */
+`;
+
+export const ForgotPasswordContainer = styled.View`
+  width: 98%;
+  align-items: flex-end;
+`;
+
+export const ForgotPasswordText = styled.Text`
+  font-family: 'SourceSerifPro-Regular';
+  font-size: 12px;
+  color: #000;
+`;
+
+export const ForgotPasswordLink = styled.Text`
+  font-family: 'SourceSerifPro-Regular';
+  font-size: 12px;
+  color: #0015CF;
 `;
