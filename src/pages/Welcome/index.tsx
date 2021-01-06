@@ -3,7 +3,6 @@ import { Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 import logoImg from '../../assets/logo.png';
-
 import Button from '../../components/Button';
 
 import {

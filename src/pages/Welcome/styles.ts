@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 export const WelcomeContainer = styled.View`
-  flex:1;
+  flex: 1;
   justify-content: space-between;
   align-items: center;
   padding: 80px 0 40px 0;
