@@ -7,6 +7,7 @@ import {
   Platform
 } from 'react-native';
 import { FormHandles } from '@unform/core';
+import { useNavigation } from '@react-navigation/native';
 
 import logoImg from '../../assets/logo.png';
 import Input from '../../components/Input';
@@ -26,6 +27,7 @@ import {
 const SignIn: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
   const passwordRef = useRef<TextInput>(null);
+  const navigation = useNavigation();
 
   const submit = useCallback((data: object) => {
     console.log("submit", data);
@@ -77,7 +79,8 @@ const SignIn: React.FC = () => {
             </View>
 
             <Button onPress={() => {
-              formRef.current?.submitForm();
+              // formRef.current?.submitForm();
+              navigation.navigate('OnBoard1');
             }}>
               Log In
             </Button>
