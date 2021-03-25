@@ -36,7 +36,7 @@ const OnBoard2: React.FC = () => {
         </OnBoardContet>
         <ButtonContainer>
           <Button onPress={() => {
-            // navigation.navigate('OnBoard2');
+            navigation.navigate('perfil');
           }}>
             Próximo
           </Button>
