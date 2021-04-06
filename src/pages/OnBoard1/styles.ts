@@ -44,8 +44,6 @@ export const OnBoardContet = styled.Text`
   font-size: 16px;
   line-height: 17px;
 
-  /* margin: 40px 0 70px 0; */
-
   color: #0015CF;
 `;
 
