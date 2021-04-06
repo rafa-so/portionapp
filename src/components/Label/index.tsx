@@ -1,9 +1,9 @@
 import React from 'react';
-import { View } from 'react-native';
+import { TextProps, View } from 'react-native';
 
 import { Container } from './styles';
 
-interface LabelProps extends React.FC {
+interface LabelProps extends TextProps {
   children?: string;
   highlight?: string;
   titlelize?: boolean;

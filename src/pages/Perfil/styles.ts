@@ -10,4 +10,10 @@ export const ContainerContent = styled.View`
   justify-content: flex-start;
   align-items:center;
   height: 100%;
+  padding: 5% 5% 0 5%;
+`;
+
+export const ContainerWelcome = styled.View`
+  width: 100%;
+  justify-content: flex-start;
 `;

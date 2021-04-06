@@ -3,16 +3,18 @@ import { View, Text } from 'react-native';
 
 import Label from '../../components/Label';
 
+import { ContainerWelcome } from './styles';
+
 const Welcome: React.FC = () => {
   return (
-    <View>
+    <ContainerWelcome>
       <Label>
         Bem-vindo(a),
       </Label>
       <Label titlelize>
         Dra. Joana
       </Label>
-    </View>
+    </ContainerWelcome>
   );
 }
 
