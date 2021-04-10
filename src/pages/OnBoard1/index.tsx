@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 import OnBoardImage from '../../assets/onboard/first.png'

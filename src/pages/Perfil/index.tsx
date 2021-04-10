@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 
 import {
   Container,
@@ -8,8 +8,12 @@ import {
 
 import Welcome from './Welcome';
 
-import Header from '../../components/Header';
-import Menu from '../../components/Menu';
+import {
+  Header,
+  Menu,
+  Panel,
+  Label
+} from '../../components';
 
 const Perfil: React.FC = () => {
   return (
@@ -17,6 +21,17 @@ const Perfil: React.FC = () => {
       <Header />
       <ContainerContent>
         <Welcome />
+        <Panel
+          children={
+            <>
+              <Label highlight=" paciente">Ultimo</Label>
+              <Label>Maria das Dores Costa da Silva</Label>
+            </>
+          }
+          icon={
+            <Icon name="arrow-right" size={20} color="#878ECD" />
+          }
+        />
       </ContainerContent>
       <Menu />
     </Container>

@@ -22,3 +22,7 @@ export const Container = styled.Text<ContainerProps>`
     color: ${colors.dark_blue}
   ` }
 `;
+
+export const Highlight = styled.Text`
+  color: ${colors.dark_blue};
+`;
