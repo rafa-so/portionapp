@@ -11,6 +11,13 @@ export const ContainerContent = styled.View`
   align-items:center;
   height: 100%;
   padding: 5% 5% 0 5%;
+  flex-basis:0;
+`;
+
+export const ListItemDialog = styled.View`
+  align-items: center;
+  flex-grow: 1;
+  margin: 5px 0;
 `;
 
 export const ContainerWelcome = styled.View`
