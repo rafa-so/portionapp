@@ -38,12 +38,11 @@ const Perfil: React.FC = () => {
       element: <Panel
         children={
           <>
-            <Label highlight=" paciente">Ultimo</Label>
-            <Label>Maria das Dores Costa da Silva 02</Label>
+            <Label highlight="paciente">Adicionar </Label>
           </>
         }
         icon={
-          <Icon name="arrow-right" size={20} color="#878ECD" />
+          <Icon name="plus-square" size={20} color="#878ECD" />
         }
       />
     },
@@ -52,12 +51,11 @@ const Perfil: React.FC = () => {
       element: <Panel
         children={
           <>
-            <Label highlight=" paciente">Ultimo</Label>
-            <Label>Maria das Dores Costa da Silva 03</Label>
+            <Label highlight="busca de paciente">Fazer uma </Label>
           </>
         }
         icon={
-          <Icon name="arrow-right" size={20} color="#878ECD" />
+          <Icon name="user-friends" size={20} color="#878ECD" />
         }
       />
     }
